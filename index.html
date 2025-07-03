@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Tools - Seleção de Ferramentas</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        .header h1 {
+            font-size: 2.5rem;
+            color: #BB86FC; /* Roxo vibrante */
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #B0B0B0;
+            margin-bottom: 3rem;
+        }
+
+        /* Grade de Ferramentas */
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        /* Cartão da Ferramenta */
+        .tool-card {
+            background-color: #1E1E1E;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(187, 134, 252, 0.15);
+        }
+
+        .tool-card h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            color: #FFFFFF;
+        }
+
+        .tool-card .description {
+            font-size: 1rem;
+            color: #A0A0A0;
+            flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Botão */
+        .tool-card .button {
+            display: block;
+            background-color: #03DAC6; /* Ciano vibrante */
+            color: #121212;
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .tool-card .button:hover {
+            background-color: #01BBAA;
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 4rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Game Dev Tools</h1>
+            <p>Sua caixa de ferramentas para desenvolvimento de jogos solo.</p>
+        </header>
+
+        <main class="tool-grid">
+            <div class="tool-card">
+                <h2>Story Node Editor (SNE)</h2>
+                <p class="description">
+                    Uma ferramenta visual para criar, organizar e exportar narrativas e diálogos complexos. Conecte nós, defina condições e visualize as ramificações da sua história com facilidade.
+                </p>
+                <a href="/SNE/index.html" class="button">Abrir Editor de Narrativa</a>
+            </div>
+
+            <div class="tool-card">
+                <h2>Criador de Códice (SM)</h2>
+                <p class="description">
+                    Estruture o universo do seu jogo. Crie e gerencie entradas para personagens, itens, locais e lore em um códice digital, pronto para ser integrado ao seu projeto.
+                </p>
+                <a href="/SM/index.html" class="button">Abrir Criador de Códice</a>
+            </div>
+
+            </main>
+
+        <footer>
+            <p>&copy; 2025 fabriciofkt157. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
